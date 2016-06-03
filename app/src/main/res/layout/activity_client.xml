@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ddd"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ddd"
+    android:layout_above="@+id/relativeLayout2">
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/inset_listview"
+        android:id="@+id/menssage_list"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#ddd"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+         />
+
+
+</LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@null"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        android:id="@+id/relativeLayout2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+             android:layout_toStartOf="@+id/send"
+
+            >
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="2dp"
+                android:padding="10dp"
+                android:layout_alignParentEnd="true"
+
+                android:id="@+id/photo" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/text"
+                android:hint="Write..."
+                android:background="#fff"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:inputType="textMultiLine|textShortMessage"
+                android:layout_toStartOf="@+id/send" />
+        </LinearLayout>
+
+        <ImageButton
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/send2"
+            android:background="#03A9F4"
+            android:scaleType="fitCenter"
+            android:padding="15dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
