@@ -3,15 +3,17 @@ package valdezprojects.com.bluechat;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import pl.droidsonroids.gif.GifImageView;
+
 /**
  * Created by javier on 17/05/16.
  */
 public class ViewHolder {
     TextView clientName;
     TextView clientText;
-    ImageView photo;
+    GifImageView photo;
 
-    public ViewHolder(TextView clientName, TextView clientText,ImageView photo) {
+    public ViewHolder(TextView clientName, TextView clientText,GifImageView photo) {
         this.clientName = clientName;
         this.clientText = clientText;
         this.photo=photo;
@@ -37,7 +39,7 @@ public class ViewHolder {
         return photo;
     }
 
-    public void setPhoto(ImageView photo) {
+    public void setPhoto(GifImageView photo) {
         this.photo = photo;
     }
 }

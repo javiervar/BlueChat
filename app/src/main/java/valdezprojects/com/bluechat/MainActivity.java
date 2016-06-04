@@ -19,6 +19,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 import pl.droidsonroids.gif.GifImageView;
 
 
@@ -88,8 +90,48 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (v.getId()) {
                     case R.id.btnAccept:
-                        txtvName.setText("Hello "+txtName.getText().toString());
+                        txtvName.setText("Hi "+txtName.getText().toString());
+                        Random r = new Random();
+                        int random = r.nextInt(10 - 1) + 1;
+                        int color=0;
+                        switch (random){
+                            case 1:
+                                color=Color.CYAN;
+                                break;
+                            case 2:
+                                color=Color.BLUE;
+                                break;
+                            case 3:
+                                color=Color.DKGRAY;
+                                break;
+                            case 4:
+                                color=Color.parseColor("0CE40C");
+                                break;
+                            case 5:
+                                color=Color.MAGENTA;
+                                break;
+                            case 6:
+                                color=Color.RED;
+                                break;
+                            case 7:
+                                color=Color.YELLOW;
+                                break;
+                            case 8:
+                                color=Color.parseColor("#FF00FC");
+                                break;
+                            case 9:
+                                color=Color.parseColor("#333333");
+                                break;
+                            case 10:
+                                color=Color.parseColor("#FFB700");
+                                break;
+
+
+                        }
+
+
                         data.name=txtName.getText().toString();
+                        data.color=color;
                         dialog.dismiss();
                         break;
                     case R.id.btnClient:

@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="500dp"
+    android:background="@drawable/round_corner2"
+    android:scrollbars="vertical">
 
     <GridLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:rowCount="6"
+        android:layout_height="500dp"
+        android:padding="20dp"
+        android:rowCount="8"
+
         android:columnCount="3"
-        android:layout_gravity="center"
-        android:scrollbars="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="vertical"
         >
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn1"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -24,6 +29,7 @@
             android:layout_column="0"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn2"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -36,6 +42,7 @@
             android:layout_column="1"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn3"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -48,6 +55,7 @@
             android:layout_column="2"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn4"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -60,6 +68,7 @@
             android:layout_column="0"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn5"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -72,6 +81,7 @@
             android:layout_column="1"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn6"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -84,6 +94,7 @@
             android:layout_column="2"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn7"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -96,6 +107,7 @@
             android:layout_column="0"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn8"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -108,6 +120,7 @@
             android:layout_column="1"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn9"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -119,19 +132,9 @@
             android:layout_row="2"
             android:layout_column="2"
             />
+
         <pl.droidsonroids.gif.GifImageButton
-            android:gravity="center"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/uno"
-            android:scaleType="fitCenter"
-            android:layout_gravity="center"
-            android:background="@null"
-            android:padding="10dp"
-            android:layout_row="3"
-            android:layout_column="0"
-            />
-        <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn10"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -144,6 +147,8 @@
             android:layout_column="0"
             />
         <pl.droidsonroids.gif.GifImageButton
+
+            android:id="@+id/btnn11"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -156,6 +161,7 @@
             android:layout_column="1"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn12"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -168,6 +174,7 @@
             android:layout_column="2"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn13"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -180,6 +187,7 @@
             android:layout_column="0"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn14"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -192,6 +200,7 @@
             android:layout_column="1"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn15"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -204,6 +213,7 @@
             android:layout_column="2"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn16"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -216,6 +226,7 @@
             android:layout_column="0"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn17"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -225,9 +236,10 @@
             android:background="@null"
             android:padding="10dp"
             android:layout_row="5"
-            android:layout_column="2"
+            android:layout_column="1"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn18"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -240,6 +252,7 @@
             android:layout_column="2"
             />
         <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn19"
             android:gravity="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -251,8 +264,59 @@
             android:layout_row="6"
             android:layout_column="0"
             />
-
+        <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn20"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/r3"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_row="6"
+            android:layout_column="1"
+            />
+        <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn21"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/r4"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_row="6"
+            android:layout_column="2"
+            />
+        <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn22"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/r5"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_row="7"
+            android:layout_column="0"
+            />
+        <pl.droidsonroids.gif.GifImageButton
+            android:id="@+id/btnn23"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/r6"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_row="7"
+            android:layout_column="1"
+            />
 
     </GridLayout>
 
-</LinearLayout>
+</ScrollView>

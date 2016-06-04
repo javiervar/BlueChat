@@ -8,14 +8,14 @@ import android.graphics.Bitmap;
 public class Chat {
     String clientName;
     String clientText;
-    Bitmap b64;
+    int gifId;
     int type;
 
-    public Chat(String clientName,String clientText,Bitmap b64,int type){
+    public Chat(String clientName,String clientText,int gifId,int type){
         super();
         this.clientName=clientName;
         this.clientText=clientText;
-        this.b64=b64;
+        this.gifId=gifId;
         this.type=type;
     }
     public int getType() {
